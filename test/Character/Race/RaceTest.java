@@ -19,9 +19,7 @@ RaceMock raceMock;
     void testEquals() {
     }
 
-    @Test
-    void testToString() {
-    }
+
 
 
 }

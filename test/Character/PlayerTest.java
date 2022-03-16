@@ -1,16 +1,18 @@
 package Character;
 
 import Character.Race.Ogre;
+import Character.Race.RaceMock;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PlayerTest {
-
+    RaceMock racemock= new RaceMock();
+Player player = new Player("a",racemock,)
     @BeforeEach
     void setUp() {
-        
+
 
     }
 
@@ -28,7 +30,7 @@ class PlayerTest {
 
     @Test
     void velocity() {
-        assertEquals(30);
+
     }
 
     @Test
