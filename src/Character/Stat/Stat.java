@@ -21,8 +21,6 @@ public abstract class Stat {
 
     @Override
     public String toString() {
-        return "Stat{" +
-                "value=" + value +
-                '}';
+        return  ""+value +"";
     }
 }

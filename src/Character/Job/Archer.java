@@ -11,6 +11,7 @@ public class Archer extends Job{
             return 1;
         if(stat instanceof Strength)
             return 1;
+
         return 0;
     }
 }

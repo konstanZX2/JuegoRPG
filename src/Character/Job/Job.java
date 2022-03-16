@@ -13,7 +13,7 @@ public abstract class Job {
     }
 
     public String toString(){
-        return "Job{}";
+        return getClass().getSimpleName();
     }
 
     }
