@@ -8,7 +8,7 @@ import Character.Stat.*;
 
 
 
-public class Player {
+public class Player implements IDamageable {
     String name;
     Race race;
     Job job;
@@ -42,13 +42,13 @@ public class Player {
     }
 
     public double velocity(){
-        return(dexterity.getValue()+ race.modifier(dexterity)+race.modifier(strength)+ race.modifier(intelligence)+ race.modifier(constitution)+ job.modifier(dexterity)+job.modifier(strength)+job.modifier(constitution)+job.modifier(intelligence))*2;
+        return(dexterity.getValue()+ race.modifier(dexterity)+ job.modifier(dexterity))*2;
 
 
 
     }
     public double power(){
-        return (strength.getValue()+ race.modifier(dexterity)+race.modifier(strength)+ race.modifier(intelligence)+ race.modifier(constitution)+ job.modifier(dexterity)+job.modifier(strength)+job.modifier(constitution)+job.modifier(intelligence))*2;
+        return (strength.getValue()+race.modifier(strength)+job.modifier(strength))*2;
 
 
 
@@ -73,4 +73,29 @@ public class Player {
     }
 
 
+    @Override
+    public double maxHealth() {
+        constitution.getValue()+
+        return 0;
+    }
+
+    @Override
+    public double health() {
+        return 0;
+    }
+
+    @Override
+    public boolean isDead() {
+        return false;
+    }
+
+    @Override
+    public void recievesDamage(double amount) {
+
+    }
+
+    @Override
+    public void heals(double amount) {
+
+    }
 }
