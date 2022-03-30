@@ -1,8 +1,9 @@
 package Item.Food;
 
-public class HumanHead extends Food{
-    @Override
-    public double getPower() {
-        return super.getPower()+70;
+public class HumanHead extends Food {
+
+    public HumanHead(double power) {
+        super(50);
     }
 }
+
